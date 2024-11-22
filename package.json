@@ -17,7 +17,8 @@
     "doc": "jsdoc2md index.js > API.md",
     "pub": "rm -rf build node_modules sword sword_build test && npm publish ./",
     "deploy": "scripts/deploy_local.sh",
-    "postinstall": "node scripts/postinstall.js"
+    "postinstall": "node scripts/postinstall.js",
+    "types": "tsc --emitDeclarationOnly"
   },
   "author": "Tobias Klein",
   "license": "GPL-2.0+",
@@ -32,6 +33,9 @@
   },
   "devDependencies": {
     "jsdoc-to-markdown": "^8.0.3",
-    "node-gyp": "^9.1.0"
-  }
+    "node-gyp": "^9.1.0",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.11.0"
+  },
+  "types": "types/index.d.ts"
 }

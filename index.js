@@ -722,5 +722,6 @@ class NodeSwordInterface {
   }
 }
 
+/** @type {import('./types').default} */
 module.exports = NodeSwordInterface;
 
